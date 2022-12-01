@@ -1,37 +1,99 @@
-# curriculum-databases-projects-template
+# Blog App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-> This template should be used for database related projects at Microverse.
-> Generate your own repository, update this README and edit all files content while working on projects. You should not be adding any new files unless asked otherwise.
+# Blog Application ![Ruby](https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&logo=ruby&logoColor=white) ![Rails](https://img.shields.io/badge/rails-%23CC0000.svg?style=for-the-badge&logo=ruby-on-rails&logoColor=white)
 
+> This project is a blog that allows the user to create posts, comment and like them. 
+
+## Built With
+
+- [x] Ruby (programming language)
+- [x] Rails (framework)
+- [x] PostgreSQL (database)
+- [x] Linters: [Rubocop](https://rubocop.org/)
+- [x] Linters: [Stylent](https://stylelint.io/)
+- [x] Visual Studio Code (code editor)
+- [x] RSpec (testings) 
 
 ## Getting Started
 
-This repository includes files with plain SQL that can be used to recreate a database:
+To get a local copy up and running follow these simple steps.
 
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+### Prerequisites
 
+- [x] A web browser like Google Chrome.
+- [x] A code editor like Visual Studio Code with Git and Ruby.
 
-## Authors
+You can check if Git is installed by running the following command in the terminal.
+```
+$ git --version
+```
 
-👤 **Author1**
+Likewise for Ruby installation.
+```
+$ ruby --version && irb
+```
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### Setup
 
-👤 **Author2**
+Clone the repository using the GitHub link provided below.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### Install
+
+In the terminal, go to your file directory and run this command.
+
+```
+$ git clone https://github.com/lucabenaventew/blog-app.git
+```
+```
+$ cd Blog-App
+```
+Run the following command to install all dependencies.
+```
+$ bundle install
+```
+```
+$ code .
+```
+### Run tests
+
+Run the local server with:
+```
+$ rails server
+```
+Open it by accessing http://localhost:3000/ on your browser.
+
+### Run tests
+
+To install rspec, in the terminal kindly run this command
+
+```
+$ gem install rspec
+```
+
+To run tests, please run this command
+
+```
+$ rspec ./spec/#{filename}_spec.rb
+```
+
+### Usage
+
+Kindly modify the files as needed.
+
+## Author
+
+👤 **Luca Benavente**
+
+- GitHub: [@lucabenaventew](https://github.com/lucabenaventew)
+- Twitter: [@BenaventeLuca](https://twitter.com/twitterhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/lucabenaventew)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/lucabenaventew/blog-app/issues).
 
 ## Show your support
 
@@ -39,9 +101,9 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- [Microverse](https://www.microverse.org/)
+- Coding Partners
+- Code Reviewers
 
 ## 📝 License
 
