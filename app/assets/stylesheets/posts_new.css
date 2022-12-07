@@ -1,5 +1,6 @@
 .create-new-post-container {
-  background-image: url(texture.png),
+  background-image:
+    url(texture.png),
     linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
   width: 100%;
   min-height: calc(100vh - 76px);

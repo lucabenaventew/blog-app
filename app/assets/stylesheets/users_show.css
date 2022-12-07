@@ -1,5 +1,6 @@
 .single-user-container {
-  background-image: url(texture.png),
+  background-image:
+    url(texture.png),
     linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
   min-height: calc(100vh - 76px);
   padding: 25px 150px;
@@ -55,11 +56,12 @@
   font-size: 1em;
   cursor: pointer;
   box-shadow: var(--box-shadow);
-  background-image: linear-gradient(
-    to right,
-    #000322,
-    var(--color-background-1)
-  );
+  background-image:
+    linear-gradient(
+      to right,
+      #000322,
+      var(--color-background-1)
+    );
   transition: 0.5s;
   color: white;
 }
