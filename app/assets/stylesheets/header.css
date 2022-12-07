@@ -13,7 +13,8 @@
 }
 
 .header-container {
-  background-image: linear-gradient(
+  background-image: 
+  linear-gradient(
     to right,
     #000322,
     var(--color-background-1)
