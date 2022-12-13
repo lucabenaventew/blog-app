@@ -1,7 +1,5 @@
 .users-container {
-  background-image:
-    url(texture.png),
-    linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
+  background-image: url(texture.png), linear-gradient(to right, var(--color-background-5), rgb(136, 131, 93));
   min-height: 100vh;
   padding: 25px 150px;
   display: flex;
@@ -11,13 +9,14 @@
 
 .single-user {
   display: flex;
+  animation: rightAnimation 2s;
 }
 
 .single-user-image {
-  border-top: 2px solid var(--color-border-1);
-  border-left: 2px solid var(--color-border-1);
-  border-bottom: 2px solid var(--color-border-1);
-  border-radius: 15px;
+  border-top: var(--border-weight-1) solid var(--color-border-1);
+  border-left: var(--border-weight-1) solid var(--color-border-1);
+  border-bottom: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
   overflow: hidden;
   min-height: 200px;
   min-width: 200px;
@@ -30,25 +29,15 @@
 }
 
 .single-user:hover > * {
-  background-image:
-    linear-gradient(
-      to right,
-      var(--color-background-1),
-      rgb(33, 27, 118)
-    );
+  background-image: linear-gradient(to right, var(--color-background-1), rgb(33, 27, 118));
 }
 
 .single-user-info {
-  border-top: 2px solid var(--color-border-1);
-  border-right: 2px solid var(--color-border-1);
-  border-bottom: 2px solid var(--color-border-1);
-  border-radius: 15px;
-  background-image:
-    linear-gradient(
-      to right,
-      var(--color-background-3),
-      var(--color-background-1)
-    );
+  border-top: var(--border-weight-1) solid var(--color-border-1);
+  border-right: var(--border-weight-1) solid var(--color-border-1);
+  border-bottom: var(--border-weight-1) solid var(--color-border-1);
+  border-radius: var(--border-radius-1);
+  background-image: linear-gradient(to right, var(--color-background-3), var(--color-background-1));
   box-shadow: var(--box-shadow);
   width: 100%;
   padding: 50px;
