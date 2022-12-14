@@ -1,19 +1,28 @@
 require 'rails_helper'
 
-RSpec.describe 'posts/show.html.erb', type: :feature do
+RSpec.describe 'posts/index.html.erb', type: :feature do
   before(:each) do
-    @user = User.create(name: 'Luca',
+    @user = User.create(name: 'Vitor',
                         photo: 'https://picsum.photos/200',
-                        bio: 'Peruvian pilot')
-    @any_post = Post.create(user: @user, title: 'Hello', text: 'This is any post')
-    Comment.create(post: @any_post, user: @user, text: 'This is the 1st comment on the 4th post')
-    Comment.create(post: @any_post, user: @user, text: 'This is the 2st comment on the 4th post')
-    Comment.create(post: @any_post, user: @user, text: 'This is the 3st comment on the 4th post')
-    visit user_post_path(@user, @any_post)
+                        bio: 'Brazilian pilot')
+    @first_post = Post.create(user: @user, title: 'Hello 1', text: 'This is my first post')
+    @last_post = Post.create(user: @user, title: 'Hello 4', text: 'This is my fourth post')
+    Comment.create(post: @last_post, user: @user, text: 'This is the 1st comment on the 4th post')
+    Comment.create(post: @last_post, user: @user, text: 'This is the 2st comment on the 4th post')
+    Comment.create(post: @last_post, user: @user, text: 'This is the 3st comment on the 4th post')
+    visit user_posts_path(@user)
   end
 
-  it 'I can see who wrote the post' do
+  it 'shows user name' do
     expect(page).to have_content(@user.name)
+  end
+
+  it 'shows the user photo' do
+    expect(page.body).to include('https://picsum.photos/200')
+  end
+
+  it 'shows number of posts user has written' do
+    expect(page.body).to include('Number of posts: ')
   end
 
   it 'shows number of comments a post has' do
@@ -25,22 +34,31 @@ RSpec.describe 'posts/show.html.erb', type: :feature do
   end
 
   it 'shows the title of the post' do
-    expect(page).to have_content(@any_post.title)
+    expect(page).to have_content(@last_post.title)
   end
 
   it 'shows the title of the post' do
-    expect(page).to have_content(@any_post.title)
+    expect(page).to have_content(@last_post.title)
   end
 
-  it 'shows part of a post body (This is any post)' do
-    expect(page).to have_content('This is any post')
+  it 'shows part of a post body (This is my first post)' do
+    expect(page).to have_content('This is my first post')
   end
 
-  it 'shows the user name of a comment' do
-    expect(page).to have_content('Luca')
+  it 'shows the 1st comment on a post (This is the 1st comment on the 4th post)' do
+    expect(page).to have_content('This is the 1st comment on the 4th post')
   end
 
-  it 'shows the comment a user left' do
-    expect(page).to have_content('This is the 2st comment on the 4th post')
+  it 'shows part of a post body (This is my first post)' do
+    expect(page).to have_content('This is my first post')
+  end
+
+  it 'Not to show the Pagination button' do
+    expect(page.body).not_to include('Pagination')
+  end
+
+  it 'Redirect to post show page when a post is clicked' do
+    click_link(@last_post.title)
+    expect(current_path).to eq(user_post_path(@user, @last_post))
   end
 end

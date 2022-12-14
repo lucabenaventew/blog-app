@@ -2,9 +2,9 @@ require 'rails_helper'
 
 RSpec.describe 'posts/index.html.erb', type: :feature do
   before(:each) do
-    @user = User.create(name: 'Luca',
+    @user = User.create(name: 'Vitor',
                         photo: 'https://picsum.photos/200',
-                        bio: 'Peruvian pilot')
+                        bio: 'Brazilian pilot')
     @first_post = Post.create(user: @user, title: 'Hello 1', text: 'This is my first post')
     @last_post = Post.create(user: @user, title: 'Hello 4', text: 'This is my fourth post')
     Comment.create(post: @last_post, user: @user, text: 'This is the 1st comment on the 4th post')

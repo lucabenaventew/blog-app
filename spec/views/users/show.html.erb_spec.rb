@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe 'User show page', type: :feature do
   describe 'test' do
     before(:each) do
-      @user = User.create(name: 'Luca',
+      @user = User.create(name: 'Vitor',
                           photo: 'https://picsum.photos/200',
-                          bio: 'Peruvian pilot')
+                          bio: 'Brazilian pilot')
       Post.create(user: @user, title: 'Hello 1', text: 'This is my first post')
       Post.create(user: @user, title: 'Hello 2', text: 'This is my second post')
       Post.create(user: @user, title: 'Hello 3', text: 'This is my third post')

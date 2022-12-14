@@ -5,7 +5,7 @@ RSpec.describe 'User index page', type: :feature do
     before(:each) do
       @user = User.create(name: 'Karla',
                           photo: 'https://picsum.photos/200',
-                          bio: 'Peruvian pilot')
+                          bio: 'Brazilian pilot')
       visit users_path
     end
 
