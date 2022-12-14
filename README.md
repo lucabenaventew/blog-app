@@ -191,6 +191,12 @@ Example:
 - Twitter: [@BenaventeLuca](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/lucabenaventew)
 
+👤 **Daniel**
+
+- GitHub: [@dgonzalesi](https://github.com/dgonzalesi/)
+- Twitter: [@dgonzalesi](https://twitter.com/dgonzalesi/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/daniel-g-sierra-60472719/)
+- AngelList: [AngelList](https://angel.co/u/daniel-sierra-13)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
