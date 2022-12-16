@@ -7,8 +7,8 @@ class Ability
     return unless user.present? # additional permissions for logged in users (they can read their own posts)
 
     can :read, :all
-    can :manage, Post, user: user
-    can :manage, Comment, user: user
+    can :manage, Post, user
+    can :manage, Comment, user
 
     return unless user.role == 'admin' # additional permissions for administrators
 
