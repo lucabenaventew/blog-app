@@ -14,7 +14,7 @@
  *= require_self
  */
 
- :root {
+:root {
   /* colors */
   --color-background-1: rgba(157, 206, 218, 0.8);
   --color-background-2: #ebf7ff;
