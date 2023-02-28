@@ -58,6 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe your project in 1 or 2 sentences.
 **[Blog App]** is a Blog App using Ruby
+The Blog app will be a classic example of a blog website. You will create a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -65,24 +66,15 @@ After you're finished please remove all the comments and instructions!
 
 > Describe the tech stack and include only the relevant sections that apply to your project.
 <details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
+  <summary>Ruby</summary>
 </details>
 
 <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
+  <summary>vscode</summary>
 </details>
 
 <details>
 <summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
 </details>
 
 <!-- Features -->
@@ -90,18 +82,17 @@ After you're finished please remove all the comments and instructions!
 ### Key Features <a name="key-features"></a>
 
 > Describe between 1-3 key features of the application.
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Project built with MVC**
+- **Render views**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo is coming soon <a name="live-demo"></a>
 
 > Add a link to your deployed project.
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- This project does not require deployment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -111,6 +102,7 @@ After you're finished please remove all the comments and instructions!
 
 > Describe how a new developer could make use of your project.
 To get a local copy up and running, follow these steps.
+- clone this repo and then cd into the features/view branch
 
 ### Prerequisites
 
@@ -120,6 +112,16 @@ In order to run this project you need:
 Example command:
 ```sh
  gem install rails
+```
+```sh
+ bundle install
+```
+```sh
+ rails db:migrate
+```
+
+```sh
+ rails s
 ```
  -->
 
@@ -199,9 +201,8 @@ Example:
 ## 🔭 Future Features <a name="future-features"></a>
 
 > Describe 1 - 3 features you will add to the project.
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **[Mobile feature]**
+- [ ] **[Responsive design]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -229,7 +230,7 @@ If you like this project...
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 > Give credit to everyone who inspired your codebase.
-I would like to thank...
+I would like to thank Microverse for creating this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -252,8 +253,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
